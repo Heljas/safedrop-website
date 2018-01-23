@@ -175,7 +175,7 @@ h2 {
 }
 
 /* FEATURES LIST */
-.features hr {
+section hr {
     width: 20%;
     border-color: #c20400;
     margin: 0 auto;
@@ -191,4 +191,33 @@ h2 {
 .features p {
     text-align: justify;
 }
-img { margin-top: 30px; }
+img {
+    margin-top: 30px;
+    max-width: 100%;
+}
+
+/* IMPROVED LAYOUT SECTION */
+.screens-section {
+    background-color: #f5f5f5;
+}
+
+.improved-layout-section h3 {
+    text-align: center;
+}
+
+/* DOWNLOAD SECTION */
+.download-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.product-version {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(29,29,29,0.81);
+    text-align: center;
+    padding: 20px;
+}
