@@ -32,7 +32,7 @@ body {
 /* Header */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -68,6 +68,13 @@ header {
     color: #c20400;
 }
 
+.header-box div .main-buttons {
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+/* Main-nav */
+
 .main-nav {
     list-style: none;
     float: right;
@@ -78,6 +85,9 @@ header {
 .main-nav li {
     display: inline-block;
     margin-left: 35px;
+    transition: all 300ms;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
 }
 
 .main-nav li a:link,
@@ -89,10 +99,13 @@ header {
 
 }
 
-.header-box div .main-buttons {
-    margin-top: 20px;
-    margin-left: 0;
+.main-nav li:hover,
+.main-nav li:active {
+    border-bottom: 2px solid #c20400;
 }
+
+
+
 
 /* BUTTONS */
 .btn:link,
@@ -105,10 +118,31 @@ header {
     display: inline-block;
     border-radius: 10px;
     margin-right: 12px;
+    transition: all 300ms;
 }
 
-.btn-light:link,
-.btn-light:visited {
+.btn-full:hover,
+.btn-full:active {
+    background-color: #910400;
+    border: 1px solid #910400;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #910400;
+    border: 1px solid #910400;
+}
+
+
+.btn-empty:link,
+.btn-empty:visited {
     background-color: transparent;
     color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-empty:hover,
+.btn-empty:active {
+    color: #c20400;
+    border: 1px solid #c20400;
 }
