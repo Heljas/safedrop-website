@@ -36,7 +36,7 @@ section {
 /* Header */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background-blur.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -224,7 +224,7 @@ img {
 }
 
 .download-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background-2-blur.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
