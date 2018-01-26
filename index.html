@@ -5,6 +5,8 @@
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
         <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width" />
+        <script src="resources/js/jquery-3.3.1.js"></script>
 
         <title>SafeDrop</title>
     </head>
@@ -87,28 +89,27 @@
                 <h2>Screenshots</h2>
                 <hr>
             </div>
-            <div class="row">
-                <div class="col span-4-of-12">
-                    <img src="resources/img/front-page-screen.png">
+
+            <div class="row gallery">
+                <div class="col span-1-of-12 arrow left">
+                    <i class="fas fa-angle-left"></i>
                 </div>
-                <div class="col span-4-of-12">
-                    <img src="resources/img/front-page-screen.png">
+                <div class="col span-10-of-12 slide-box">
+                    <div class="slide">
+                        <img src="resources/img/supreme-with-safedrop.png">
+                    </div>
+                    <div class="slide">
+                        <img src="resources/img/front-page-screen.png">
+                    </div>
+                    <div class="slide">
+                        <img src="resources/img/supreme-without-safedrop.png">
+                    </div>
                 </div>
-                <div class="col span-4-of-12">
-                    <img src="resources/img/front-page-screen.png">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span-4-of-12">
-                    <img src="resources/img/front-page-screen.png">
-                </div>
-                <div class="col span-4-of-12">
-                    <img src="resources/img/front-page-screen.png">
-                </div>
-                <div class="col span-4-of-12">
-                    <img src="resources/img/front-page-screen.png">
+                <div class="col span-1-of-12 arrow right">
+                    <i class="fas fa-angle-right"></i>
                 </div>
             </div>
+            <div class="row slide-index"></div>
 
         </section>
         <section class="improved-layout-section">
@@ -177,7 +178,7 @@
         <footer>
             <div>FOOTER</div>
         </footer>
-
+        <script src="resources/js/gallery.js"></script>
     </body>
 
 </html>
