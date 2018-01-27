@@ -6,11 +6,11 @@ for(let i = 0; i < $(".slide").length; i++){
 }
 
 changeSlide(0);
-setInterval(function(){
-    if(!pauseInterval){
-        changeSlide(1);
-    }
-}, 2500);
+// setInterval(function(){
+//     if(!pauseInterval){
+//         changeSlide(1);
+//     }
+// }, 2500);
 
 
 function changeSlide(direction) {
