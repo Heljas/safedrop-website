@@ -26,13 +26,16 @@ $("a[href='#download']").on("click", function(){
     $(window).scrollTo($('.download-section'), {offset: -35, duration: scrollDuration});
 });
 
-
+$('header').waypoint(function(){
+    $("nav").removeClass('fadeOut');
+});
 $('.features-section').waypoint(function(direction){
+    let nav = $("nav");
     if(direction === "down"){
-        $("nav").removeClass('fadeOut');
-        $("nav").addClass('sticky-nav');
+        nav.removeClass('fadeOut');
+        nav.addClass('sticky-nav');
     } else {
-        $("nav").addClass("fadeOut");
+        nav.addClass("fadeOut");
     }
 }, {
     offset: '5%'
@@ -43,5 +46,5 @@ $('.features-section').waypoint(function(direction){
         $("nav").removeClass("fadeOut sticky-nav");
     }
 }, {
-    offset: '30%'
+    offset: '20%'
 });
