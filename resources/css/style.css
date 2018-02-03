@@ -262,32 +262,40 @@ h2 {
 }
 
 /* ICONS */
-.icon {
-    font-size: 250%;
+.icon-sm,
+.icon-big {
     color: #c20400;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
     transition: all 200ms;
+}
+.icon-sm {
+    font-size: 100%;
+    margin-right: 10px;
+}
+
+.icon-big {
+    font-size: 250%;
+    margin-bottom: 10px;
 }
 
 /* FEATURES LIST */
-.features .col {
+.features-section .col {
     padding: 20px;
 }
-.features .row {
+.features-section .row {
     margin: 20px auto;
 }
-.features h3 {
+.features-section h3 {
     text-align: center;
 }
-.features p {
+.features-section .span-4-of-12 p {
     text-align: justify;
 }
-img {
-    margin-top: 30px;
-    max-width: 100%;
-}
+/*img {*/
+    /*margin-top: 30px;*/
+    /*max-width: 100%;*/
+/*}*/
 .features .span-4-of-12 {
     margin: 0 0 0 1.6%;
 }
@@ -299,9 +307,44 @@ img {
     margin-bottom: 0;
 }
 
-.span-4-of-12:hover .icon {
+.span-4-of-12:hover .icon-big {
     transform: scale(1.05);
 
+}
+
+.see-more-features {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.see-more-features * {
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 250ms;
+}
+.see-more-features i[class='fas fa-plus icon-sm'] {
+    animation: zoomInOut 1.5s 1;
+    animation-iteration-count:infinite;
+}
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+.see-more-features span:hover {
+    color: #c20400;
+}
+.more-features {
+    display: none;
 }
 
 /* IMPROVED LAYOUT SECTION */
@@ -358,23 +401,9 @@ img {
     background-color: #1d1d1d;
 }
 
-.product-version hr {
-    margin: 10px auto;
-    width: 10%;
-}
-
-.tick {
-    margin-right: 10px;
-}
-.cross {
-    margin-right: 15px;
-}
-
-.tick {
-    color: #c20400;
-}
 .cross {
     color: dimgray;
+    margin-right: 15px;
 }
 
 
@@ -435,6 +464,7 @@ img {
 
 }
 .arrow {
+    cursor: pointer;
     padding: 10px;
     z-index: 100;
     position: absolute;
@@ -535,6 +565,10 @@ footer {
     padding: 40px;
     font-size: 80%;
     position: relative;
+}
+
+footer p a {
+    color: black;
 }
 .social-links {
     position: absolute;

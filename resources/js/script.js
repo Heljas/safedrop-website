@@ -48,3 +48,15 @@ $('.features-section').waypoint(function(direction){
 }, {
     offset: '20%'
 });
+
+$(".see-more-features").on("click", function() {
+    $(".more-features").slideToggle();
+
+
+    if($(this).html() === "<i class=\"fas fa-plus icon-sm\"></i><span>See more features</span>"){
+        $(this).html("<i class=\"fas fa-minus icon-sm\"></i><span>Hide more features</span>");
+    } else {
+        $(this).html("<i class=\"fas fa-plus icon-sm\"></i><span>See more features</span>");
+    }
+
+});
