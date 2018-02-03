@@ -128,14 +128,6 @@ h2 {
 }
 /* Main-nav */
 
-.main-nav {
-    position: absolute;
-    right: 15%;
-    list-style: none;
-    float: right;
-    margin-top: 50px;
-    padding-bottom: 15px;
-}
 
 .main-nav li {
     display: inline-block;
@@ -172,26 +164,34 @@ h2 {
     to   { opacity: 0; }
 }
 .fadeOut {
-    animation: fadeOut 200ms;
+    animation: fadeOut 300ms;
     opacity: 0;
 }
-.sticky-nav .main-nav {
-    animation: fadeIn 300ms;
-    position: fixed;
+.main-nav {
+    max-width: 1250px;
+    padding: 40px 25px;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+.sticky-nav .main-nav {
+    padding: 0 25px;
+}
+.sticky-nav .nav-container {
+    animation: fadeIn 300ms;
+    position: fixed;
     width: 100%;
     top: 0;
     left:0;
     background-color: rgba(255,255,255,.96);
-    text-align: right;
-    padding: 0 20%;
     height: 60px;
     border-bottom: 2px solid #c20400;
-    z-index: 999;
+    z-index: 998;
     margin: 0;
 }
+
 .sticky-nav .main-nav li:hover,
 .sticky-nav .main-nav li:active {
     border-bottom: 2px solid #c20400;
@@ -475,11 +475,28 @@ img {
     color: #c20400;
 }
 
-.video {
-    width: 60%;
-    height: 385px;
-    margin: 0 20%;
+.video-row {
+    max-width: 780px;
+    margin: auto;
 }
+
+.video-wrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 /* FAQ */
 
