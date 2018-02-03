@@ -8,24 +8,30 @@
         <meta name="viewport" content="width=device-width" />
         <meta charset="utf-8">
         <script src="resources/js/jquery-3.3.1.js"></script>
-
+        <script src="resources/js/jquery.scrollTo.min.js"></script>
         <title>SafeDrop</title>
     </head>
     <body>
         <header>
-            <ul class="main-nav">
-                <li><a href="#">FEATURES</a></li>
-                <li><a href="#">SCREENSHOTS</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">DOWNLOAD</a></li>
-            </ul>
+            <nav>
+                <ul class="main-nav">
+                    <li class="nav-logo"><a href="#top">Safe<span>Drop</span></a></li>
+                    <li><a href="#features">FEATURES</a></li>
+                    <li><a href="#screenshots">SCREENSHOTS</a></li>
+                    <li><a href="#video">VIDEO</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#download">DOWNLOAD</a></li>
+                </ul>
+
+
+            </nav>
             <div class="header-box">
                 <div>
                     <h1><span class="logo-text">Safe<span>Drop</span></span><br>Supreme & Palace Bot</h1>
                     <div class="main-buttons">
-                        <a class="btn btn-full" href="#">BUY FOR $30</a>
-                        <a class="btn btn-empty" href="#">See features</a>
-                        <a class="btn btn-empty" href="#">Check free version</a>
+                        <a class="btn btn-full" href="#download">BUY FOR $30</a>
+                        <a class="btn btn-empty" href="#features">See features</a>
+                        <a class="btn btn-empty" href="#download">Check free version</a>
                     </div>
                 </div>
 
@@ -41,7 +47,7 @@
                 <div><i class="fas fa-angle-double-down"></i></div>
             </div>
         </header>
-        <section>
+        <section class="features-section">
             <div class="row features">
                 <div class="col span-12-of-12">
                     <h2>Main features</h2>
@@ -228,6 +234,7 @@
                 <li><i class="fab fa-youtube"></i></li>
             </ul>
         </footer>
+        <script src="resources/js/jquery.waypoints.min.js"></script>
         <script src="resources/js/gallery.js"></script>
         <script src="resources/js/script.js"></script>
     </body>
