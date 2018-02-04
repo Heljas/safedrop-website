@@ -26,6 +26,8 @@ $("a[href='#download']").on("click", function(){
     $(window).scrollTo($('.download-section'), {offset: -35, duration: scrollDuration});
 });
 
+
+
 $('header').waypoint(function(){
     $("nav").removeClass('fadeOut');
 });
@@ -52,11 +54,35 @@ $('.features-section').waypoint(function(direction){
 $(".see-more-features").on("click", function() {
     $(".more-features").slideToggle();
 
-
     if($(this).html() === "<i class=\"fas fa-plus icon-sm\"></i><span>See more features</span>"){
         $(this).html("<i class=\"fas fa-minus icon-sm\"></i><span>Hide more features</span>");
     } else {
         $(this).html("<i class=\"fas fa-plus icon-sm\"></i><span>See more features</span>");
     }
 
+});
+$(".mobile-nav-bar").on("click", function() {
+    console.log($(this).html());
+    if($(this).html() === "<i class=\"fas fa-bars\"></i>"){
+        $(this).html("<i class=\"fas fa-angle-up\"></i>");
+        $(".nav-list").slideDown();
+    } else {
+        $(this).html("<i class=\"fas fa-bars\"></i>");
+        $(".nav-list").slideUp(scrollDuration, function(){
+            $(".nav-list").css("display", "");
+
+        });
+    }
+
+});
+
+
+$(".nav-list li, .nav-logo").on("click", function(){
+
+    if($(".mobile-nav-bar").is(":visible")){
+        $(".mobile-nav-bar").html("<i class=\"fas fa-bars\"></i>");
+        $(".nav-list").slideUp(scrollDuration, function(){
+            $(".nav-list").css("display", "");
+        });
+    }
 });

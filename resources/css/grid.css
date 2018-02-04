@@ -27,7 +27,7 @@
 .col {
 	display: block;
 	float:left;
-	margin: 1% 0 1% 1.6%;
+	margin: 0;
 }
 
 .col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
@@ -623,7 +623,7 @@
 }
 
 .span-6-of-12 {
-	width: 49.2%; 
+	width: 50%;
 }
 
 .span-5-of-12 {
@@ -631,7 +631,7 @@
 }
 
 .span-4-of-12 {
-	width: 32.26%; 
+	width: 33.33%;
 }
 
 .span-3-of-12 {
