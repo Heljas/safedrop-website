@@ -1,3 +1,36 @@
+@media only screen and (max-width: 1200px) {
+    .features {
+        padding: 0 15px;
+    }
+    .header-box h1 {
+        font-size: 250%;
+    }
+
+    .header-box h1 .logo-text {
+        font-size: 130%;
+    }
+
+    .faq-question, .faq-answer {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .product-version {
+        width: 80%;
+    }
+    .header-box {
+        padding: 40px 15px 40px 10px
+    }
+    .header-box div {
+        margin-left: 20%;
+    }
+
+    footer p {
+        font-size: 90%;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     nav {
         padding: 15px 15px;
@@ -47,9 +80,85 @@
     .sticky-nav .mobile-nav-bar {
         color: #1d1d1d;
     }
-    .col.span-4-of-12 {
-        width: 49.2%;
+    .col.col-4-of-12 {
+        width: 50%;
         margin: 0;
+    }
+
+    .header-box {
+        left: 50%;
+    }
+    .header-box h1 {
+        text-align: center;
+    }
+    .header-box h1 .logo-text{
+        font-size: 130%;
+    }
+    .header-box .sm-headline {
+        font-size: 70%;
+    }
+    .header-box div {
+        margin: 0 10px;
+    }
+
+    header .social-links {
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .header-box div .main-buttons {
+        margin: 10px 0;
+    }
+    .main-buttons .btn {
+        width: 250px;
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .gallery .slide p {
+        height: 25%;
+    }
+    .gallery .slide img {
+        max-height: 75%;
+        bottom: 25%;
+    }
+    .faq-question, .faq-answer {
+        width: 85%;
+    }
+
+    .product-version {
+        width: 90%;
+    }
+
+    footer .social-links {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 550px) {
+    .col.col-4-of-12 {
+        padding: 20px 8%;
+        width: 100%;
+        margin: 0;
+    }
+    .col.col-6-of-12 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .product-version {
+        width: 70%;
+    }
+    .product-version:first-child {
+        margin-bottom: 20px;
     }
 }
 
@@ -60,8 +169,7 @@
         width: 100%;
         height: 50px;
     }
-    .col.span-4-of-12 {
-        width: 100%;
-        margin: 0;
-    }
+
+
+
 }

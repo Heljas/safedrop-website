@@ -331,17 +331,17 @@ nav.sticky-nav {
 .features-section h3 {
     text-align: center;
 }
-.features-section .span-4-of-12 p {
+.features-section .col-4-of-12 p {
     text-align: justify;
 }
 /*img {*/
     /*margin-top: 30px;*/
     /*max-width: 100%;*/
 /*}*/
-.features .span-4-of-12 {
+.features .col-4-of-12 {
     margin: 0;
 }
-.features .span-4-of-12:first-child {
+.features .col-4-of-12:first-child {
     margin: 0;
 }
 
@@ -349,7 +349,7 @@ nav.sticky-nav {
     margin-bottom: 0;
 }
 
-.span-4-of-12:hover .icon-big {
+.col-4-of-12:hover .icon-big {
     transform: scale(1.05);
 
 }
