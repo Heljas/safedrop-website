@@ -37,7 +37,7 @@ body {
 }
 
 section {
-    padding: 50px 0;
+    padding: 65px 0;
 }
 
 /* Header */
@@ -299,7 +299,7 @@ nav.sticky-nav {
     width: 65px;
     height: 4px;
     background-color: #c20400;
-    margin: 15px auto 25px auto;
+    margin: 15px auto 40px auto;
 }
 
 /* ICONS */
@@ -325,8 +325,8 @@ nav.sticky-nav {
     margin: 0;
     padding: 20px;
 }
-.features-section .row {
-    margin: 20px auto;
+.features-section .row:first-child {
+    margin-top: 10px;
 }
 .features-section h3 {
     text-align: center;
@@ -358,7 +358,7 @@ nav.sticky-nav {
     display: inline-block;
     text-align: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .see-more-features * {
@@ -466,6 +466,7 @@ nav.sticky-nav {
     left: 0;
     margin: auto;
     max-height: 80%;
+    max-width: 100%;
 
 }
 
@@ -627,6 +628,10 @@ footer .social-links {
     list-style: none;
     float: left;
     margin-left: 10px;
+}
+
+.social-links li:first-child {
+    margin-left: 0;
 }
 
 .social-links li i {

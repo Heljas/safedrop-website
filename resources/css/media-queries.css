@@ -32,6 +32,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .header-box {
+        background: none;
+    }
+
     nav {
         padding: 15px 15px;
         background-color: rgba(0,0,0,0.41);
@@ -95,7 +99,9 @@
         font-size: 130%;
     }
     .header-box .sm-headline {
-        font-size: 70%;
+        display: block;
+        line-height: 90%;
+        font-size: 80%;
     }
     .header-box div {
         margin: 0 10px;
@@ -121,6 +127,10 @@
         margin: 10px auto;
     }
 
+    .gallery {
+        border-radius: 0;
+    }
+
     .gallery .slide p {
         height: 25%;
     }
@@ -131,6 +141,9 @@
     .faq-question, .faq-answer {
         width: 85%;
     }
+    .faq-answer {
+        padding: 5px 30px;
+    }
 
     .product-version {
         width: 90%;
@@ -140,10 +153,15 @@
         display: none;
     }
 
+    .scroll-down p {
+        display: none;
+    }
+
 
 }
 
 @media only screen and (max-width: 550px) {
+
     .col.col-4-of-12 {
         padding: 20px 8%;
         width: 100%;
@@ -152,6 +170,40 @@
     .col.col-6-of-12 {
         width: 100%;
         margin: 0;
+    }
+
+    .gallery {
+        height: 550px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .separator {
+        margin: 15px auto 25px auto;
+    }
+
+    .gallery .slide img {
+        max-height: 65%;
+        bottom: 35%;
+    }
+
+    .gallery .slide p {
+        max-height: 30%;
+        overflow: hidden;
+    }
+
+    .gallery .arrow {
+        padding: 0;
+        width: 50%;
+        top: 67.5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .faq-question {
+        margin-bottom: 8px;
     }
 
     .product-version {
@@ -163,12 +215,35 @@
 }
 
 @media only screen and (max-width: 480px) {
+
+    .col.col-4-of-12 {
+        padding: 20px 4%;
+    }
     .nav-container .nav-list li {
         margin-left: 0;
         display: inline-block;
         width: 100%;
         height: 50px;
     }
+    .faq-answer {
+        padding: 2px 20px;
+    }
+
+    .product-version {
+        width: 90%;
+    }
+
+    .header-box .sm-headline {
+        font-size: 60%;
+    }
+    .header-box div .main-buttons {
+        margin: 50px 0;
+    }
+    .main-buttons .btn {
+        width: 220px;
+    }
+
+
 
 
 

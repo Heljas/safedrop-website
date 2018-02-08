@@ -40,7 +40,7 @@ $('.features-section').waypoint(function(direction){
         nav.addClass("fadeOut");
     }
 }, {
-    offset: '5%'
+    offset: '7%'
 });
 
 $('.features-section').waypoint(function(direction){
@@ -52,12 +52,12 @@ $('.features-section').waypoint(function(direction){
 });
 
 $(".see-more-features").on("click", function() {
-    $(".more-features").slideToggle();
+    $(".more-features").slideToggle(650);
 
-    if($(this).html() === "<i class=\"fas fa-plus icon-sm\"></i><span>See more features</span>"){
+    if($(this).html() === "<i class=\"fas fa-plus icon-sm\"></i><span>Show more features</span>"){
         $(this).html("<i class=\"fas fa-minus icon-sm\"></i><span>Hide more features</span>");
     } else {
-        $(this).html("<i class=\"fas fa-plus icon-sm\"></i><span>See more features</span>");
+        $(this).html("<i class=\"fas fa-plus icon-sm\"></i><span>Show more features</span>");
     }
 
 });
