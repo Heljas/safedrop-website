@@ -615,10 +615,17 @@ footer p a {
     right: 0;
     margin: 0 20px;
 }
+
+.social-links a {
+    color: white;
+}
 footer .social-links {
     font-size: 250%;
     top: 50%;
     transform: translateY(-50%);
+    color: #1d1d1d;
+}
+footer .social-links a {
     color: #1d1d1d;
 }
 .social-links li {
