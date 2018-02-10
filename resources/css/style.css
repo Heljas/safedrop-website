@@ -50,7 +50,7 @@ header .social-links  {
 
 header {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background-blur.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -387,7 +387,7 @@ nav.sticky-nav {
 }
 
 /* IMPROVED LAYOUT SECTION */
-.screens-section, .faq-section, .download-section {
+.screens-section, .faq-section, .download-section, .tos-section {
     background-color: #f5f5f5;
 }
 
@@ -415,7 +415,7 @@ nav.sticky-nav {
 }
 
 .download-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background-2-blur.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background-2.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -648,4 +648,17 @@ footer .social-links {
 
 .fa-youtube:hover {
     color: #ff0000;
+}
+
+.tos-section h2 {
+    margin-top: 20px;
+    font-size: 150%;
+}
+
+.tos-section p {
+    padding: 0 30px;
+}
+
+.tos-section .separator {
+    margin: 8px auto;
 }
