@@ -1,3 +1,4 @@
+
 $(".faq-question:first .fa-angle-right").addClass('rotate');
 $(".faq-answer:first").slideDown();
 
@@ -46,6 +47,11 @@ $('.features-section').waypoint(function(direction){
 $('.features-section').waypoint(function(direction){
     if(direction === "up"){
         $("nav").removeClass("fadeOut sticky-nav");
+
+    } else if ($(".mobile-nav-bar").is(":visible")){
+        $(".nav-list").hide();
+        $(".nav-list").css("display", "");
+        $(".mobile-nav-bar").html("<i class=\"fas fa-bars\"></i>");
     }
 }, {
     offset: '20%'
