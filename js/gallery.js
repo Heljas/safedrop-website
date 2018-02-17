@@ -10,7 +10,7 @@ setInterval(function(){
     if(!pauseInterval){
         changeSlide(1);
     }
-}, 2500);
+}, 5000);
 
 
 function changeSlide(direction) {
@@ -28,7 +28,7 @@ function changeSlide(direction) {
     slides.hide();
     slidesIndex.removeClass('slide-active');
 
-    slides.eq(slideNumber).fadeIn();
+    slides.eq(slideNumber).fadeIn(1000);
     slidesIndex.eq(slideNumber).addClass('slide-active');
 }
 

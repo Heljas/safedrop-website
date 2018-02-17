@@ -1,14 +1,13 @@
-
 .row {
-    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+	zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 .row:before,
 .row:after {
-    content:"";
-    display:table;
+	content:"";
+	display:table;
 }
 .row:after {
-    clear:both;
+	clear:both;
 }
 
 /*  GRID COLUMN SETUP   ==================================================================== */
@@ -18,8 +17,6 @@
 	float:left;
 	margin: 0;
 }
-
-.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
 
 .col-12-of-12 {
 	width: 100%;
@@ -68,4 +65,3 @@
 .col-1-of-12 {
 	width: 8.33%;
 }
-
