@@ -1,10 +1,11 @@
 let slideNumber = 0;
 let pauseInterval = false;
 
+//Create slides indicators
 for(let i = 0; i < $(".slide").length; i++){
     $("<i class='fas fa-circle slide-inactive'></i>").appendTo(".slide-index");
 }
-
+//Slideshow
 changeSlide(0);
 setInterval(function(){
     if(!pauseInterval){

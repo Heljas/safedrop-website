@@ -1,5 +1,6 @@
+/*ROWS*/
 .row {
-	zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+	zoom: 1;
 }
 .row:before,
 .row:after {
@@ -10,8 +11,7 @@
 	clear:both;
 }
 
-/*  GRID COLUMN SETUP   ==================================================================== */
-
+/*COLUMNS*/
 .col {
 	display: block;
 	float:left;
