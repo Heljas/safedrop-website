@@ -28,18 +28,18 @@ $('.features-section').waypoint(function(direction){
     offset: '7%'
 });
 
-function createScroll(href, element) {
-    $("a[href='" + href + "']").on("click", function(){
+function createScroll(linkElement, element) {
+    $(linkElement).on("click", function(){
         $(window).scrollTo($(element), {offset: -35, duration: 600});
     });
 }
 
-createScroll("#top", "header");
-createScroll("#features", ".features-section");
-createScroll("#screenshots", ".screens-section");
-createScroll("#video", ".video-section");
-createScroll("#faq", ".faq-section");
-createScroll("#download", ".download-section");
+createScroll(".nav-logo", "header");
+createScroll(".nav-features", ".features-section");
+createScroll(".nav-screenshots", ".screens-section");
+createScroll(".nav-video", ".video-section");
+createScroll(".nav-faq", ".faq-section");
+createScroll(".nav-download", ".download-section");
 
 //Mobile nav
 $(".mobile-nav-bar").on("click", function() {

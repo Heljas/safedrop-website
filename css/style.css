@@ -136,8 +136,7 @@ h2 {
 }
 
 /* BUTTONS */
-.btn:link,
-.btn:visited {
+.btn {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 3px;
@@ -148,6 +147,7 @@ h2 {
     -webkit-transition: all 300ms;
     -o-transition: all 300ms;
     transition: all 300ms;
+    cursor: pointer;
 }
 
 .btn-full:hover,
@@ -157,8 +157,7 @@ h2 {
 }
 
 
-.btn-empty:link,
-.btn-empty:visited {
+.btn-empty {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
@@ -270,10 +269,6 @@ nav {
     z-index: 10;
 }
 
-.nav-logo {
-    display: none;
-    z-index: 15;
-}
 .mobile-nav-bar {
     display: none;
     z-index: 20;
@@ -284,24 +279,28 @@ nav {
     padding-top: 3px;
     padding-bottom: 5px;
     height: 100%;
-    -webkit-transition: all 300ms;
-    -o-transition: all 300ms;
-    transition: all 300ms;
+    -webkit-transition: border-bottom 300ms;
+    -o-transition: border-bottom 300ms;
+    transition: border-bottom 300ms;
     border-bottom: 2px solid transparent;
-    font-size: 105%;
-}
-.nav-list li {
-    display: inline-block;
-    margin-left: 35px;
-}
-.nav-list li a:link,
-.nav-list li a:visited {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 85%;
-    color: #fff;
-
+    font-size: 90%;
+    cursor: pointer;
 }
+
+.nav-logo {
+    display: none;
+    font-weight: bold;
+    z-index: 15;
+}
+
+.nav-list li {
+    display: inline-block;
+    color: #fff;
+    margin-left: 35px;
+}
+
 .nav-list li:hover,
 .nav-list li:active {
     border-bottom: 2px solid #c20400;
@@ -334,15 +333,10 @@ nav.sticky-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     height: 100%;
 }
 .sticky-nav .nav-logo {
+    font-size: 100%;
     margin-right: auto;
     padding-bottom: 0;
 }
@@ -357,16 +351,8 @@ nav.sticky-nav {
     border-bottom: 2px solid #c20400;
 }
 
-.sticky-nav .nav-logo a:link,
-.sticky-nav .nav-logo a:visited {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.nav-logo a,
-.sticky-nav .nav-list li a {
+.sticky-nav .nav-logo,
+.sticky-nav .nav-list li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -377,7 +363,7 @@ nav.sticky-nav {
     color: black;
 }
 
-.sticky-nav .nav-logo a span {
+.sticky-nav .nav-logo span {
     color: #c20400;
 }
 
@@ -850,4 +836,9 @@ footer .social-links a {
 
 .tos-section .separator {
     margin: 8px auto;
+}
+
+.tos-section a {
+    text-decoration: none;
+    color: black;
 }
